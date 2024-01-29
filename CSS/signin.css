@@ -99,6 +99,25 @@ input[type="radio"] {
   cursor: default;
   user-select: none;
 }
+.slide-controls label:hover {
+  border: 1.5px solid;
+  transition: border-color;
+  border-color: #00d4ff;
+  border-radius: 5px;
+}
+.login .field:hover {
+  border: 1.5px solid;
+  transition: border-color;
+  border-color: #00d4ff;
+  border-radius: 5px;
+}
+
+.signup .field:hover {
+  border: 1.5px solid;
+  transition: border-color;
+  border-color: #00d4ff;
+  border-radius: 5px;
+}
 .wrapper .form-container {
   width: 100%;
   overflow: hidden;
@@ -128,15 +147,15 @@ input[type="radio"] {
   transition: all 0.3s ease;
 }
 .form-inner form .field input:focus {
-  border-color: #12e8f0;
+  border-color: #00d4ff;
 }
 .form-inner form .field input::placeholder {
   color: #999;
   transition: all 0.3s ease;
 }
-form .field input:focus::placeholder {
+/*form .field input:focus::placeholder {
   color: #b3b3b3;
-}
+}*/
 .form-inner form .pass-link {
   margin-top: 5px;
 }
