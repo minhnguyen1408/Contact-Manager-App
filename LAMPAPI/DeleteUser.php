@@ -1,7 +1,6 @@
 <?php
 	$inData = getRequestInfo();
 	
-	$color = $inData["color"];
 	$userId = $inData["userId"];
 
 	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");
@@ -11,8 +10,8 @@
 	} 
 	else
 	{
-		$stmt = $conn->prepare("INSERT into Colors (UserId,Name) VALUES(?,?)");
-		$stmt->bind_param("ss", $userId, $color);
+		$stmt = $conn->prepare("DELETE FROM Users WHERE UserID=?");
+		$stmt->bind_param("i", $userId);
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();
@@ -35,5 +34,4 @@
 		$retValue = '{"error":"' . $err . '"}';
 		sendResultInfoAsJson( $retValue );
 	}
-	
 ?>

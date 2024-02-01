@@ -1,8 +1,11 @@
 <?php
 	$inData = getRequestInfo();
 	
-	$color = $inData["color"];
 	$userId = $inData["userId"];
+	$firstName = $inData["firstName"];
+	$lastName = $inData["lastName"];
+	$login = $inData["login"];
+	$password = $inData["password"];
 
 	$conn = new mysqli("localhost", "TheBeast", "WeLoveCOP4331", "COP4331");
 	if ($conn->connect_error) 
@@ -11,8 +14,8 @@
 	} 
 	else
 	{
-		$stmt = $conn->prepare("INSERT into Colors (UserId,Name) VALUES(?,?)");
-		$stmt->bind_param("ss", $userId, $color);
+		$stmt = $conn->prepare("UPDATE Users SET FirstName=?, LastName=?, Login=?, Password=? WHERE UserID=?");
+		$stmt->bind_param("ssssi", $firstName, $lastName, $login, $password, $userId);
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();
@@ -35,5 +38,4 @@
 		$retValue = '{"error":"' . $err . '"}';
 		sendResultInfoAsJson( $retValue );
 	}
-	
 ?>
