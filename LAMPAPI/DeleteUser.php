@@ -10,7 +10,7 @@
 	} 
 	else
 	{
-		$stmt = $conn->prepare("DELETE FROM Users WHERE UserID=?");
+		$stmt = $conn->prepare("DELETE FROM Users WHERE ID=?");
 		$stmt->bind_param("i", $userId);
 		$stmt->execute();
 		$stmt->close();

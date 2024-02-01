@@ -14,7 +14,7 @@
 	} 
 	else
 	{
-		$stmt = $conn->prepare("UPDATE Users SET FirstName=?, LastName=?, Login=?, Password=? WHERE UserID=?");
+		$stmt = $conn->prepare("UPDATE Users SET FirstName=?, LastName=?, Login=?, Password=? WHERE ID=?");
 		$stmt->bind_param("ssssi", $firstName, $lastName, $login, $password, $userId);
 		$stmt->execute();
 		$stmt->close();
