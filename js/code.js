@@ -18,7 +18,7 @@ function doLogin()
 	document.getElementById("loginResult").innerHTML = "";
 
 	let tmp = {login:login,password:password};
-//	var tmp = {login:login,password:hash};
+	// var tmp = {login:login,password:hash};
 	let jsonPayload = JSON.stringify( tmp );
 	
 	let url = urlBase + '/Login.' + extension;
@@ -33,7 +33,8 @@ function doLogin()
 	{
 		xhr.onreadystatechange = function() 
 		{
-			alert(this.status);
+			// alert(this.status);
+			// alert(this.status);
 			if (this.readyState == 4 && this.status == 200) 
 			{
 				alert("2222");
@@ -95,6 +96,7 @@ function doSignup() {
     try {
         xhr.onreadystatechange = function () {
         	alert(this.status);
+			alert(this.status);
             if (this.readyState != 4) {
                 return;
             }
