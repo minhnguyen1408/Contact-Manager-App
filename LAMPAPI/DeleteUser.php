@@ -11,7 +11,7 @@
 	else
 	{
 		$stmt = $conn->prepare("DELETE FROM Users WHERE ID=?");
-		$stmt->bind_param("i", $userId);
+		$stmt->bind_param("s", $userId);
 		$stmt->execute();
 		$stmt->close();
 		$conn->close();
