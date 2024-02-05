@@ -1,7 +1,7 @@
 /* body formatting */
 body {
     background-color: #F3B02E;
-    background-image: url('../images/ocean_background/jpg');
+    background-image: url('../images/ocean_background.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -13,8 +13,8 @@ body {
     padding: 1px 16px;
     height: 1000px;
     margin-top: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -227,7 +227,8 @@ table {
     height: 300px;
     overflow-x: auto;
     margin-top: 0px;
-    border: 1px solid rgba(155, 188, 115, 0.9);
+    border: 1px solid #00d4ff;
+    border-radius: 5px;
 }
 
 #contacts td,
@@ -247,7 +248,7 @@ table {
     font-size: 16px;
     font-weight: bold;
     color: #007D2F;
-    background-color: rgba(155, 188, 115, 0.9);
+    background-color: #00d4ff;
     text-transform: uppercase;
 }
 
