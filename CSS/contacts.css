@@ -1,12 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+
 /* body formatting */
 body {
-    background-color: #F3B02E;
-    background-image: url('../images/ocean_background.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+  /*    background: -webkit-linear-gradient(left, #9896f0, #fbc8d5);*/
+    background-image: url("../images/beach.jpg");
     background-size: cover;
-    overflow: hidden;
+    background-position: center;
 }
 
 .content {
@@ -22,7 +25,6 @@ body {
 }
 
 .loggedInDiv {
-    font-family: 'Montserrat';
     font-weight: bolder;
     font-size: 2vw;
     align-self: center;
@@ -39,6 +41,19 @@ body {
     display: inline-block;
     padding: 10px 10px;
     vertical-align: middle;
+}
+
+#logoutButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 5px 12px;
+    font-size: 20px;
+    background-color: #74d2e4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .column button {
@@ -70,11 +85,10 @@ body {
 
 /* add contacts table formatting */
 #addMe {
-    font-family: 'Montserrat';
     display: none;
-    border-radius: 17px;
+    border-radius: 5px;
     position: relative;
-    background: rgba(234, 207, 155, 0.9);
+    background: rgba(250, 250, 248, 0.9);
     max-width: 350px;
     margin: 0 auto 50px;
     padding: 30px;
@@ -83,8 +97,7 @@ body {
 }
 
 #addMe input {
-    border-radius: 17px;
-    font-family: 'Montserrat';
+    border-radius: 5px;
     outline: 0;
     background: #f2f2f2;
     width: 100%;
@@ -96,25 +109,27 @@ body {
 }
 
 
-#addMe>input:valid {
+/* #addMe>input:valid {
     border: 2px solid #009345;
     ;
 }
 
 #addMe>input:invalid {
-    border: 2px solid red;
+    border: 2px solid blue;
 }
 
-#addMe>input:invalid:required {
+/* #addMe>input:invalid:required {
     background-image: white;
-}
+} */ 
 
 #addMe button {
-    border-radius: 17px;
-    font-family: 'Montserrat';
+    border-radius: 5px;
     outline: 0;
-    background: #78500b;
-    color: rgba(234, 207, 155, 0.9);
+    background: -webkit-linear-gradient(
+        right,
+        #2536cf, #00d4ff,#2536cf, #00d4ff
+      );
+    color: rgba(248, 246, 243, 0.9);
     width: 100%;
     border: 0;
     margin: 0 0 15px;
@@ -126,7 +141,6 @@ body {
 
 #contacts td input {
     border-radius: 17px;
-    font-family: 'Montserrat';
     outline: 0;
     background: #fbde99;
     width: 100%;
@@ -159,10 +173,9 @@ body {
 /* search bar formatting */
 .search-container {
     background: #fff;
-    font-family: 'Montserrat';
-    height: 30px;
+    height: 50px;
     width: 400px;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 10px 20px;
     display: flex;
     justify-content: center;
@@ -184,7 +197,6 @@ body {
     border: none;
     outline: none;
     width: 0px;
-    font-family: 'Montserrat';
     font-weight: 500;
     font-size: 16px;
     transition: 0.8s;
@@ -200,12 +212,10 @@ body {
 
 span {
     color: rgb(164, 0, 0);
-    font-family: 'Montserrat';
 }
 
 p {
     color: rgb(164, 0, 0);
-    font-family: 'Montserrat';
 }
 
 /* table formatting */
@@ -216,24 +226,28 @@ p {
 
 
 table {
-    width:100%;
+    width: 100%;
     table-layout: fixed;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    background-color: #fff; /* Add this line to set a white background */
 }
+
 
 .tbl-content {
     height: 300px;
     overflow-x: auto;
     margin-top: 0px;
-    border: 1px solid #00d4ff;
-    border-radius: 5px;
+    border-radius: 10px;
+    background-color: #fff; /* Add this line to set a white background */
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.24); /* Add this line for the shadow effect */
+
 }
 
 #contacts td,
 #contacts th {
-    border: 1px solid rgba(155, 188, 115, 0.9);
+    border: 2px solid rgba(72, 107, 245, 0.9);
 }
 
 #contacts tr:hover {
@@ -243,12 +257,11 @@ table {
 #contacts th {
     padding: 20px 15px;
     text-align: left;
-    font-family: 'Montserrat';
     font-weight: 500;
     font-size: 16px;
     font-weight: bold;
-    color: #007D2F;
-    background-color: #00d4ff;
+    color: antiquewhite;
+    background-color: #74d2e4;
     text-transform: uppercase;
 }
 
@@ -346,7 +359,6 @@ table {
 
 .font {
     text-align: center;
-    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
     font-size: 25px;
@@ -357,6 +369,198 @@ table {
     cursor: pointer;
     margin-left: 80px;
 }
+
+::selection {
+    background: #0e45dd;
+    color: #fff;
+  }
+  .wrapper {
+    overflow: hidden;
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0.95;
+    /*  font-weight: bold;*/
+  }
+  .wrapper .title-text {
+    display: flex;
+    width: 200%;
+  }
+  .wrapper .title {
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .slide-controls {
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+  }
+  .slide-controls .slide {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+  }
+  .slide-controls label.signup {
+    color: #000;
+  }
+  .slide-controls .slider-tab {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(left, #2536cf, #00d4ff);
+    transition: all 0.6s linear;
+  }
+  input[type="radio"] {
+    display: none;
+  }
+  #signup:checked ~ .slider-tab {
+    left: 50%;
+  }
+  #signup:checked ~ label.signup {
+    color: #fff;
+    cursor: default;
+    user-select: none;
+  }
+  #signup:checked ~ label.login {
+    color: #000;
+  }
+  #login:checked ~ label.signup {
+    color: #000;
+  }
+  #login:checked ~ label.login {
+    cursor: default;
+    user-select: none;
+  }
+  .slide-controls label:hover {
+    border: 1.5px solid;
+    transition: border-color;
+    border-color: #00d4ff;
+    border-radius: 5px;
+  }
+  .login .field:hover {
+    border: 1.5px solid;
+    transition: border-color;
+    border-color: #00d4ff;
+    border-radius: 5px;
+  }
+  
+  .signup .field:hover {
+    border: 1.5px solid;
+    transition: border-color;
+    border-color: #00d4ff;
+    border-radius: 5px;
+  }
+  .wrapper .form-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-container .form-inner {
+    display: flex;
+    width: 200%;
+  }
+  .form-container .form-inner form {
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .form-inner form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .form-inner form .field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  .form-inner form .field input:focus {
+    border-color: #00d4ff;
+  }
+  .form-inner form .field input::placeholder {
+    color: #999;
+    transition: all 0.3s ease;
+  }
+  /*form .field input:focus::placeholder {
+    color: #b3b3b3;
+  }*/
+  .form-inner form .pass-link {
+    margin-top: 5px;
+  }
+  .form-inner form .signup-link {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .form-inner form .pass-link a,
+  .form-inner form .signup-link a {
+    color: #0e45dd;
+    text-decoration: none;
+  }
+  .form-inner form .pass-link a:hover,
+  .form-inner form .signup-link a:hover {
+    text-decoration: underline;
+  }
+  form .btn {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btn .btn-layer {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(
+      right,
+      #2536cf, #00d4ff,#2536cf, #00d4ff
+    );
+    border-radius: 5px;
+    transition: all 0.4s ease;
+  }
+  form .btn:hover .btn-layer {
+    left: 0;
+  }
+  form .btn input[type="button"] {
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  }
 
 /* make sidebar a topbar for mobile view*/
 @media screen and (max-width: 700px) {

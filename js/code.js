@@ -36,9 +36,11 @@ function doLogin() {
 
                 let jsonObject = JSON.parse(xhr.responseText);
                 userId = jsonObject.id;
-
+                
                 if (userId < 1) {
-                    document.getElementById("loginResult").innerHTML = "User/Password combination incorrect";
+                    var loginResultElement = document.getElementById("loginResult");
+                    loginResultElement.innerHTML = "User/Password combination incorrect";
+                    loginResultElement.style.color = "red";
                     return;
                 }
                 firstName = jsonObject.firstName;
