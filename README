@@ -1,0 +1,48 @@
+# Contact Manager App
+
+Welcome to the Contact Manager project! This application allows users to efficiently manage their contacts with a user-friendly interface. Whether you're looking to add, view, edit, or delete contacts, this application has got you covered.
+
+## Features
+
+- **User Authentication:** Securely log in and create accounts to personalize your contact management experience.
+- **CRUD Operations:** Effortlessly add, view, edit, and delete contacts for efficient data management.
+- **Responsive Design:** Enjoy a seamless experience on various devices with a responsive and intuitive front-end interface.
+- **Data Integrity:** The application ensures data integrity through thorough validation and sanitization of user inputs.
+
+## Installation
+
+To run the Contact Manager locally, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/contact-manager.git`
+2. Navigate to the project directory: `cd contact-manager`
+3. Set up the database by importing the provided SQL file.
+4. Configure the database connection in `config.php`.
+5. Open the application in your preferred web browser.
+
+## Usage
+
+1. Create an account or log in if you already have one.
+2. Use the intuitive interface to manage your contacts.
+3. Explore the various features such as adding, viewing, editing, and deleting contacts.
+
+## Contributing
+
+We welcome contributions! If you'd like to contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/new-feature`.
+3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+4. Push to the branch: `git push origin feature/new-feature`.
+5. Submit a pull request.
+
+## Feedback
+
+If you have any issues, suggestions, or feedback, please open an issue on the [Issues](https://github.com/your-username/contact-manager/issues) page.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Thank you for using the Contact Manager! Happy managing your contacts!
