@@ -13,7 +13,7 @@ Welcome to the Contact Manager project! This application allows users to efficie
 
 To run the Contact Manager locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/contact-manager.git`
+1. Clone the repository: `git clone https://github.com/your-username/contact-manager-app.git`
 2. Navigate to the project directory: `cd contact-manager`
 3. Set up the database by importing the provided SQL file.
 4. Configure the database connection in `config.php`.
