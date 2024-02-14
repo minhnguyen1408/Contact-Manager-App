@@ -2,7 +2,7 @@
 
 Welcome to the Contact Manager project! This application allows users to efficiently manage their contacts with a user-friendly interface. Whether you're looking to add, view, edit, or delete contacts, this application has got you covered.
 
-## Features
+**## Features**
 
 - **User Authentication:** Securely log in and create accounts to personalize your contact management experience.
 - **CRUD Operations:** Effortlessly add, view, edit, and delete contacts for efficient data management.
