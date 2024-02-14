@@ -126,14 +126,14 @@ body {
     border-radius: 5px;
     outline: 0;
     background: -webkit-linear-gradient(
-        right,
-        #2536cf, #00d4ff,#2536cf, #00d4ff
+        left,
+        #2536cf, #00d4ff
       );
     color: rgba(248, 246, 243, 0.9);
     width: 100%;
     border: 0;
     margin: 0 0 15px;
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
     font-size: 14px;
     cursor: pointer;
